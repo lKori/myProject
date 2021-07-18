@@ -1,0 +1,7 @@
+print('주문하실 음료:', end=' ')
+print('카페라떼')
+print('주문하실 간식:', end=' ')
+print('쿠키')
+print('카페라떼', end=' ')
+print('쿠키', end=' ')
+print('주문 받았습니다.')
