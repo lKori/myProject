@@ -6,6 +6,30 @@
 	<title>연습문제 2</title>
 </head>
 <body>
-	
+	<script>
+		function compare(x, y)
+		{
+			if(x === y)
+			{
+				return alert(x + "와 " + y + "는 같습니다.");
+			}
+			else if(x > y)
+			{
+				return alert(x + "(이)가 " + y + "보다 큽니다.");
+			}
+			else
+			{
+				return alert(y + "(이)가 " + x + "보다 큽니다.");
+			}
+		}
+
+		var x = parseInt(prompt("비교할 첫 번째 숫자:"))
+		var y = parseInt(prompt("비교할 두 번째 숫자:"))
+
+		if (x !== null && y !== null)
+		{
+			compare(x, y);
+		}
+	</script>
 </body>
 </html>
