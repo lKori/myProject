@@ -48,9 +48,11 @@
             </nav>
         </header>
         <div id="showSlide">
-            <img src="images/image_01.jpg" alt="">
-            <img src="images/image_02.jpg" alt="">
-            <img src="images/image_03.jpg" alt="">
+            <div id="slides">
+                <img src="images/image_01.jpg" alt="">
+                <img src="images/image_02.jpg" alt="">
+                <img src="images/image_03.jpg" alt="">
+            </div>
         </div>
         <main id="contents" class="fixedClear">
             <div id="tabMenu">
@@ -58,17 +60,21 @@
                 <label for="tab1">공지사항</label>
                 <input type="radio" id="tab2" name="tabs">
                 <label for="tab2">갤러리</label>
-                <div id="notice">
+                <div id="notice" class="tabContents">
+                    <h2>공지사항 내용입니다.</h2>
                     <ul>
-                        <li>공지사항 내용 1</li>
-                        <li>공지사항 내용 2</li>
-                        <li>공지사항 내용 3</li>
-                        <li>공지사항 내용 4</li>
+                        <a href="#"><li>공지사항 내용 1</li></a>
+                        <a href="#"><li>공지사항 내용 2</li></a>
+                        <a href="#"><li>공지사항 내용 3</li></a>
+                        <a href="#"><li>공지사항 내용 4</li></a>
                     </ul>
                 </div>
-                <div id="gallery">
+                <div id="gallery" class="tabContents">
+                    <h2>갤러리 내용입니다.</h2>
                     <ul>
-
+                        <li><img src="images/gallery_01.jpg"></li>
+                        <li><img src="images/gallery_02.jpg"></li>
+                        <li><img src="images/gallery_03.jpg"></li>
                     </ul>
                 </div>
             </div>
@@ -91,5 +97,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/slideShow.js"></script>
 </body>
 </html>
