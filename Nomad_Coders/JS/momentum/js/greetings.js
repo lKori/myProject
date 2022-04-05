@@ -1,9 +1,9 @@
-const loginForm = document.querySelector('#login-form');
-const loginInput = document.querySelector('#login-form input');
-const greeting = document.querySelector('#greeting');
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-const HIDDEN_CLASSNAME = 'hidden';
-const USERNAME_KEY = 'username';
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -24,7 +24,7 @@ console.log(savedUsername);
 
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
-  loginForm.addEventListener('submit', onLoginSubmit);
+  loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);
 }
