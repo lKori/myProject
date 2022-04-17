@@ -1,0 +1,29 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+#wrap {
+  width: 100vw;
+  height: auto;
+  max-width: 100%;
+  background-color: #555;
+}
+
+#contents {
+  width: 1200px;
+  height: 2000px;
+  margin: 0 auto;
+  background-color: #999;
+}
+#contents__mainContent {
+  float: left;
+  width: 70%;
+  height: 100%;
+  background-color: #aaa;
+}
+#contents__sideContent {
+  float: right;
+  width: 30%;
+  height: 100%;
+  background-color: #bbb;
+}

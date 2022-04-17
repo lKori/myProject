@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAVER</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="wrap">
-        <header class="header clearfix">
-            <div class="logo">
-                <a><img src="./img/naver_logo.PNG"></a>
-            </div>
-            <div class="subMenu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <title>NAVER</title>
+    </head>
 
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <div id="header__searchWrap">
+                    <a href="./index.html" class="logo-naver"></a>
+                    <div class="searchWindow">
+                        <input class="textInput" type="text" />
+                    </div>
+                    <button class="searchBtn">
+                        <img src="./img/search.png" />
+                    </button>
+                </div>
+                <div id="header__mainMenuWrap"></div>
+            </header>
+            <div id="contents" class="clearfix">
+                <div id="contents__mainContent">
+                    <div class="ad"></div>
+                    <div class="newsWrap"></div>
+                    <div class="todayPostWrap"></div>
+                </div>
+                <div id="contents__sideContent"></div>
             </div>
-            <div class="search">
-                <input type="text">
-            </div>
-            <nav>
-
-            </nav>
-        </header>
-        <div class="main">
-            <div class="news">
-
-            </div>
-            <div class="profile">
-                
-            </div>
-            <div class="contents">
-
-            </div>
+            <footer id="footer">
+                <div id="footer__ad"></div>
+                <div id="footer__notice"></div>
+                <div id="footer__company"></div>
+                <div id="footer__menu"></div>
+            </footer>
         </div>
-        <footer class="footer">
-
-        </footer>
-    </div>
-</body>
+    </body>
 </html>
