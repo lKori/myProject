@@ -1,16 +1,15 @@
 #header {
     width: 100%;
     height: 230px;
-    background-color: #666;
+    background-color: #292a2d;
 }
 
 /* search */
 #header__searchWrap {
     position: relative;
-    width: 1200px;
+    width: 100vw;
     height: 180px;
-    margin: 0 auto;
-    background-color: #777;
+    background-color: #292a2d;
 }
 .logo-naver::before {
     display: inline-block;
@@ -18,14 +17,14 @@
     background-image: url(../img/naver_logo_01.PNG);
     background-repeat: no-repeat;
     background-size: 240px;
-    background-position: 10px 45%;
+    background-position: 22% 45%;
     width: 100%;
     height: 100%;
 }
 .searchWindow {
     position: absolute;
     top: 33%;
-    left: 23%;
+    left: 33%;
     width: 570px;
     height: 55px;
     font-size: 1.5rem;
@@ -44,11 +43,19 @@
     border: 0;
     color: #fff;
 }
+.searchWindow .historyBtn {
+    position: absolute;
+    top: 20px;
+    left: 485px;
+    width: 13px;
+    height: 13px;
+    filter: invert(57%) sepia(46%) saturate(1862%) hue-rotate(102deg) brightness(93%) contrast(98%);
+}
 
 .searchBtn {
     position: absolute;
     top: 33%;
-    left: calc(23% + 521px);
+    left: calc(33% + 570px - 55px);
     width: 55px;
     height: 55px;
     padding: 15px;
@@ -59,14 +66,75 @@
 .searchBtn > img {
     width: 100%;
     color: #fff;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
-        brightness(103%) contrast(103%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 /* menu */
 #header__mainMenuWrap {
-    width: 1200px;
+    position: relative;
+    width: 100vw;
     height: 50px;
-    margin: 0 auto;
-    background-color: #888;
+    padding: 0 368px 0 352px;
+    background-color: #292a2d;
+    border-top: 1px solid #3a3b3d;
+}
+#mainMenu {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 350px 10px 0;
+}
+#mainMenu li {
+    margin: 0 5px;
+}
+#mainMenu > li > a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+#mainMenu .greenTitle {
+    color: #03c75a;
+}
+#mainMenu > li:first-child > a > img {
+    display: inline-block;
+    content: "";
+    background: url(../img/email.png) no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+#mainMenuMore > p {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+}
+#mainMenuMore > p:hover {
+    text-decoration: underline;
+}
+#mainMenuMore > p::after {
+    content: "";
+    display: inline-block;
+    background: url(../img/arrow-down.png);
+    background-size: 100% 100%;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-left: 10px;
+    filter: invert(51%) sepia(50%) saturate(0%) hue-rotate(165deg) brightness(84%) contrast(110%);
+}
+
+/* weather */
+#weatherInfo {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    right: 370px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #fff;
 }
