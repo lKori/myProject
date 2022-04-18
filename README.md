@@ -1,2 +1,2 @@
 # myProject
-Practice creating programs
+프로그래밍 공부를 하는 과정 중에서 만들게 된 웹이나 앱을 모아두고 있습니다.
