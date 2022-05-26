@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .wrap {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 200px;
+      }
+
+      .menu {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: #ccc;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3) inset;
+      }
+
+      .menu:hover {
+        cursor: pointer;
+      }
+
+      .menu span {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        width: 200px;
+        height: 10px;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+        background-color: #000;
+      }
+
+      .menu span::before,
+      .menu span::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 10px;
+        background-color: #000;
+        transition: all 0.3s ease;
+      }
+
+      .menu span::before {
+        top: -60px;
+      }
+
+      .menu span::after {
+        top: 60px;
+      }
+
+      .menu.on span {
+        /* background-color: rgba(0, 0, 0, 0); */
+        opacity: 0;
+      }
+
+      .menu.on span::before {
+        top: 0;
+        transform: rotateZ(45deg);
+      }
+
+      .menu.on span::after {
+        top: 0;
+        transform: rotateZ(-45deg);
+      }
+    </style>
+
+    <title>Hamburger Menu</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="menu">
+        <span></span>
+      </div>
+    </div>
+
+    <script>
+      const menu = document.querySelector(".menu");
+
+      function handleMenu() {
+        menu.classList.toggle("on");
+      }
+
+      menu.addEventListener("click", handleMenu);
+    </script>
+  </body>
+</html>
